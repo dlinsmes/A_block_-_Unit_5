@@ -80,7 +80,7 @@ public class ArrayLists {
         System.out.println();
 
         Deck d = new Deck();
-        BlackJackPlayer b = new BlackJackPlayer();
+        BlackJackPlayer b = new BlackJackPlayer("sasquatch");
 
         //add the top two cards from the deck
         //into the blackjackplayer's hand
@@ -91,6 +91,16 @@ public class ArrayLists {
         //which can be directly passed to
         //b.addCard()
         b.addCard(d.draw());
+
+        b.clearHand();
+
+        Card c = new Card("spades", 1);
+        b.addCard(c);
+        b.addCard(c);
+
+        Card c2 = new Card("spades", 12);
+//        b.addCard(c2);
+//        b.addCard(c2);
 
         //check the cards in the hand
         System.out.println(b);
