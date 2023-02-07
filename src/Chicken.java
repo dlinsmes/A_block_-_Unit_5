@@ -64,6 +64,10 @@ public class Chicken {
         beakHardness = 2;
     }
 
+    public String getName() {
+        return name;
+    }
+
     //accessor method aka getters aka get methods
     //-let other class see private data
     public String getFootColor(){

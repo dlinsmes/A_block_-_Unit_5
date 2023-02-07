@@ -67,4 +67,8 @@ public class Deck {
         }
 
     }
+
+    public int getSize() {
+        return 52-top;
+    }
 }
